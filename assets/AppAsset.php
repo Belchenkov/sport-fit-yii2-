@@ -27,8 +27,6 @@ class AppAsset extends AssetBundle
         'css/responsive.css',
     ];
     public $js = [
-        'js/html5shiv.js',
-        'js/respond.min.js',
         //'js/jquery.js',
         //'js/bootstrap.min.js',
         'js/jquery.scrollUp.min.js',
@@ -39,6 +37,5 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapPluginAsset',
-
     ];
 }
