@@ -20,11 +20,11 @@ class ltAppAsset extends AssetBundle
 
     public $js = [
         'js/html5shiv.js',
-        //'js/respond.min.js',
+        'js/respond.min.js',
     ];
 
-    public $jsOptions = array(
-      'condition' => 'lte IE9',
-      'position' => \yii\web\View::POS_HEAD
-    );
+    public $jsOptions = [
+        'condition' => 'lte IE9',
+        'position' => \yii\web\View::POS_HEAD
+    ];
 }
