@@ -44,19 +44,18 @@ ltAppAsset::register($this);
                 <div class="col-sm-6">
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
-                            <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                            <li<i class="fa fa-phone"></i> 95 88 21</li>
+                            <li<i class="fa fa-envelope"></i> info@sport-fit.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="social-icons pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -71,18 +70,7 @@ ltAppAsset::register($this);
                     <div class="logo pull-left">
                         <a href="<?= \yii\helpers\Url::home()?>"><?= Html::img('@web/images/home/logo.png', ['alt' => 'SPORT-FIT'])?></a>
                     </div>
-                    <div class="btn-group pull-right">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                РУБ
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">USD</a></li>
-                                <li><a href="#">EUR</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
@@ -90,8 +78,6 @@ ltAppAsset::register($this);
 <?php if(!Yii::$app->user->isGuest): ?>
     <li><a href="<?= \yii\helpers\Url::to(['/site/logout'])?>"><i class="fa fa-user"></i> <?= Yii::$app->user->identity['username']?> (Выход)</a></li>
 <?php endif;?>
-                            <li><a href="#"><i class="fa fa-star"></i>Пожелания</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
                             <li><a href="#" onclick="return getCart()"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
                             <li><a href="<?= \yii\helpers\Url::to(['/admin'])?>"><i class="fa fa-lock"></i> Войти</a></li>
                         </ul>
@@ -104,7 +90,7 @@ ltAppAsset::register($this);
     <div class="header-bottom"><!--header-bottom-->
         <div class="container">
             <div class="row">
-                <div class="col-sm-9">
+                <div class="col-sm-8">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -113,14 +99,13 @@ ltAppAsset::register($this);
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="mainmenu pull-left">
+                    <!--<div class="mainmenu pull-left">
                         <ul class="nav navbar-nav collapse navbar-collapse">
                             <li><a href="index.html" class="active">Главная</a></li>
                             <li class="dropdown"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="shop.html">Продукты</a></li>
                                     <li><a href="product-details.html">Product Details</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="cart.html">Корзина</a></li>
                                     <li><a href="login.html">Войти</a></li>
                                 </ul>
@@ -133,12 +118,12 @@ ltAppAsset::register($this);
                             </li>
                             <li><a href="contact-us.html">Контакты</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="search_box pull-right">
                         <form method="get" action="<?= \yii\helpers\Url::to(['category/search'])?>">
-                            <input type="text" placeholder="Search" name="q">
+                            <input type="text" placeholder="Поиск ..." name="q">
                         </form>
                     </div>
                 </div>
