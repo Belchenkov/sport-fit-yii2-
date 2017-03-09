@@ -47,6 +47,11 @@
         box-shadow: none;
     }
     
+    .btn.btn-default.get {
+        border-radius: 7px;
+        padding: 15px;
+    }
+    
     .navbar-toggle {
         background-color: #000;
     }
@@ -67,10 +72,6 @@
     /*************************
 *******Header CSS******
 **************************/
-    
-    .header_top {
-        background: ;
-    }
     
     .contactinfo ul li:first-child {
         margin-left: -15px;

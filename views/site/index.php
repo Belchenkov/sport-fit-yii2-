@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'SPORT-FIT';
 ?>
 <section id="slider"><!--slider-->
     <div class="container">
@@ -111,7 +111,7 @@ $this->title = 'My Yii Application';
 
 <div class="col-sm-9 padding-right">
 <div class="features_items"><!--features_items-->
-    <h2 class="title text-center">Features Items</h2>
+    <h2 class="title text-center">Популярные</h2>
     <div class="col-sm-4">
         <div class="product-image-wrapper">
             <div class="single-products">
@@ -556,7 +556,7 @@ $this->title = 'My Yii Application';
 </div><!--/category-tab-->
 
 <div class="recommended_items"><!--recommended_items-->
-    <h2 class="title text-center">recommended items</h2>
+    <h2 class="title text-center">Рекомендуемые</h2>
 
     <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

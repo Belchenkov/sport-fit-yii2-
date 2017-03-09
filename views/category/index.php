@@ -86,7 +86,7 @@ use yii\helpers\Html;
 <div class="col-sm-9 padding-right">
 <?php if( !empty($hits) ): ?>
 <div class="features_items"><!--features_items-->
-    <h2 class="title text-center">Features Items</h2>
+    <h2 class="title text-center">Популярное</h2>
     <?php foreach($hits as $hit): ?>
     <div class="col-sm-4">
         <div class="product-image-wrapper">
@@ -109,12 +109,7 @@ use yii\helpers\Html;
                     <?= Html::img("@web/images/home/sale.png", ['alt' => 'Распродажа', 'class' => 'new'])?>
                 <?php endif?>
             </div>
-            <div class="choose">
-                <ul class="nav nav-pills nav-justified">
-                    <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                    <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
-                </ul>
-            </div>
+            
         </div>
     </div>
     <?php endforeach;?>
@@ -410,7 +405,7 @@ use yii\helpers\Html;
 </div><!--/category-tab-->
 
 <div class="recommended_items"><!--recommended_items-->
-    <h2 class="title text-center">recommended items</h2>
+    <h2 class="title text-center">Рекомендуемые</h2>
 
     <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

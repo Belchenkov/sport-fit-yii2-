@@ -3,11 +3,6 @@
 /* @var $this yii\web\View */
 use yii\helpers\Html;
 ?>
-<section id="advertisement">
-    <div class="container">
-        <img src="/images/shop/1.jpg" alt="" />
-    </div>
-</section>
 
 <section>
     <div class="container">
@@ -70,12 +65,7 @@ use yii\helpers\Html;
                                             <?= Html::img("@web/images/home/sale.png", ['alt' => 'Распродажа', 'class' => 'new'])?>
                                         <?php endif?>
                                     </div>
-                                    <div class="choose">
-                                        <ul class="nav nav-pills nav-justified">
-                                            <li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-                                            <li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-                                        </ul>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <?php $i++?>
